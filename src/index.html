@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>My First Parcel App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link href="styles.css" rel="stylesheet"/>
     <link
-      rel="stylesheet"
-      href="./../node_modules/bootstrap/dist/css/bootstrap-grid.css"
+            href="./../node_modules/bootstrap/dist/css/bootstrap-grid.css"
+            rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="./../node_modules/bootstrap/dist/css/bootstrap-utilities.css"
+            href="./../node_modules/bootstrap/dist/css/bootstrap-utilities.css"
+            rel="stylesheet"
     />
-    <script type="module" src="app.js"></script>
+    <script src="app.js" type="module"></script>
     <style>
-      body {
-        background-image: url(./images/bg_image.svg);
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-      }
-
-      main {
-        height: 50%;
-        width: 50%;
-        display: flex;
-        align-items: end;
-        column-gap: 1rem;
-      }
-
-      main > .btn-group {
-        width: 40%;
-      }
     </style>
-  </head>
-  <body>
-    <nav class="container py-3 mb-3 btn-group">
-      <div class="btn-group">
+</head>
+<body class="container-fluid container-md">
+<nav class="py-3 mb-3 btn-group">
+    <div class="btn-group">
         <button class="btn-outlined-primary">Login</button>
         <button class="btn-secondary">Sign Up</button>
-      </div>
-    </nav>
-    <main class="container">
-      <div class="btn-group px-5">
+    </div>
+</nav>
+<div class="bg">
+    <div class="row">
+        <div class="d-flex col-6 justify-content-end">
+            <img alt="circle" class="d-none d-md-block" src="images/home_bg/circle_top.svg">
+        </div>
+    </div>
+    <img class="d-none d-md-block" src="images/home_bg/circle_left.svg" alt="circle">
+    <div style="position: absolute; bottom: 0;" class="d-md-flex align-items-end justify-content-between w-100  d-none">
+        <img class="d-none d-md-block" src="images/home_bg/stroke_bottom_left.svg" alt="stroke">
+        <img src="images/home_bg/art.svg" alt="art">
+    </div>
+</div>
+<main class="row p-md-5">
+    <h1 class="font-display font-lg">Healthy<br>Meal Plan</h1>
+    <h2 class="font-display mb-3">Your Guide to Balanced Eating</h2>
+    <img alt="stroke" class="col-sm-8 col-md-6 col-lg-5 mb-3" src="images/home_bg/stroke.svg">
+    <div class="btn-group d-flex flex-column flex-md-row">
         <button class="btn-primary">Meal Planner</button>
         <button class="btn-secondary">Food Catalog</button>
-      </div>
-    </main>
-  </body>
-  <script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </div>
+</main>
+</body>
+<script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </html>
